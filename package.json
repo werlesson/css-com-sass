@@ -1,0 +1,23 @@
+{
+  "name": "css-com-sass",
+  "version": "1.0.0",
+  "description": "> Projeto desenvolvido para explorar os conceitos abordados no SASS.",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass --watch style/scss:style/css",
+    "build-compressed": "sass --watch style/scss:style/css  --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/werlesson/css-com-sass.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/werlesson/css-com-sass/issues"
+  },
+  "homepage": "https://github.com/werlesson/css-com-sass#readme",
+  "dependencies": {
+    "sass": "^1.26.3"
+  }
+}
