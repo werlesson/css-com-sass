@@ -1,0 +1,17 @@
+@mixin tipo-1($size) {
+  font-family: $font-1;
+  @if $size == 18 {
+    font-size: rem(18);
+    line-height: rem(30, 18);
+  }
+}
+@mixin tipo-2($size) {
+  font-family: $font-2;
+  @if $size == 18 {
+    font-size: rem(18);
+    line-height: rem(30, 18);
+  } @else if $size == 24 {
+    font-size: rem(24);
+    line-height: rem(30, 24);
+  }
+}

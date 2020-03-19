@@ -80,7 +80,8 @@ $s-device: 480px;
 // Mixin Container
 @mixin container {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
+  width: 100%;
   max-width: $l-device;
   margin: 0 auto;
   position: relative;
@@ -100,10 +101,11 @@ $s-device: 480px;
 
 @mixin row {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  width: 100%;
   position: relative;
-  margin-left: -gutter / 2;
-  margin-right: -gutter / 2;
+  margin-left: -$gutter / 2;
+  margin-right: -$gutter / 2;
   @include d(s) {
     margin-left: 0;
     margin-right: 0;
@@ -112,10 +114,4 @@ $s-device: 480px;
 
 .row {
   @include row;
-}
-
-div {
-  background: rgba(0, 0, 0, 0.4);
-  min-height: 50px;
-  margin-bottom: 10px;
 }

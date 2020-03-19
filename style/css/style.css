@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Aref+Ruqaa|PT+Mono&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -174,7 +175,8 @@ table {
 }
 .container {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
@@ -194,10 +196,11 @@ table {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  width: 100%;
   position: relative;
-  margin-left: -gutter/2;
-  margin-right: -gutter/2;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 @media screen and (max-width: 760px-1) {
   .row {
@@ -206,10 +209,10 @@ table {
   }
 }
 
-div {
-  background: rgba(0, 0, 0, 0.4);
-  min-height: 50px;
-  margin-bottom: 10px;
+body {
+  background-color: #edece4;
+  border: 10px solid #cbc6b9;
+  color: #2a2426;
 }
 
 /*# sourceMappingURL=style.css.map */
