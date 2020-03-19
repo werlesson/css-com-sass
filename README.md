@@ -30,11 +30,11 @@ SASS
 
 ```sass
 div
-  background-color: blue;
-  padding: 10px;
-  margin-left: 8px;
+  background-color: blue
+  padding: 10px
+  margin-left: 8px
   p
-    line-height: 15px;
+    line-height: 15px
 ```
 
 SCSS
