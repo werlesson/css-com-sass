@@ -232,14 +232,14 @@ img {
 
 p {
   font-family: "PT Mono", monospace;
-  font-size: 1.125em;
-  line-height: 1.6666666667em;
+  font-size: 1.125rem;
+  line-height: 1.6666666667rem;
 }
 
 .titulo {
   font-family: "PT Mono", monospace;
-  font-size: 1.125em;
-  line-height: 1.6666666667em;
+  font-size: 1.125rem;
+  line-height: 1.6666666667rem;
   text-transform: uppercase;
 }
 @media screen and (max-width: 759px) {
@@ -259,6 +259,134 @@ p {
 @media screen and (min-width: 760px) and (max-width: 1199px) {
   .titulo::after {
     width: 60%;
+  }
+}
+
+.intro {
+  margin-top: 60px;
+}
+@media screen and (max-width: 759px) {
+  .intro {
+    margin-top: 20px;
+  }
+}
+
+.logo {
+  margin-bottom: 60px;
+}
+
+.intro-info {
+  border-right: 2px solid #2a2426;
+  max-width: 320px;
+}
+.intro-info p {
+  padding-top: 10px;
+}
+.intro-info p:first-child {
+  border-bottom: 2px solid #2a2426;
+  padding-bottom: 10px;
+}
+
+.intro-telefone {
+  color: #988c77;
+}
+@media screen and (max-width: 759px) {
+  .intro-telefone {
+    margin-bottom: 40px;
+  }
+}
+.intro-telefone::after {
+  content: "/ / / /";
+  display: block;
+  margin-top: 200px;
+  font-size: 220px;
+  letter-spacing: -90px;
+  color: #2a2426;
+}
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  .intro-telefone::after {
+    margin-top: 80px;
+    font-size: 160px;
+    letter-spacing: -70px;
+  }
+}
+@media screen and (max-width: 759px) {
+  .intro-telefone::after {
+    display: none;
+  }
+}
+
+.aberto {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: #1ab912;
+  border-radius: 50%;
+  margin-left: 30px;
+}
+
+.intro-foto {
+  border: 10px solid #cbc6b9;
+  width: 100%;
+}
+
+.menu {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+@media screen and (max-width: 759px) {
+  .menu {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.menu-item {
+  margin-bottom: 60px;
+}
+.menu-item h2 {
+  font-family: "Aref Ruqaa", serif;
+  font-size: 1.5rem;
+  line-height: 1.25rem;
+  margin-bottom: 1rem;
+}
+.menu-item li {
+  font-family: "PT Mono", monospace;
+  font-size: 1.125rem;
+  line-height: 1.6666666667rem;
+  line-height: 1.9444444444rem;
+}
+.menu-item li span {
+  font-family: "Aref Ruqaa", serif;
+  color: #988c77;
+  display: inline-block;
+  width: 70px;
+  margin-right: 10px;
+  text-align: right;
+  margin-left: -80px;
+}
+@media screen and (max-width: 759px) {
+  .menu-item li span {
+    margin-left: 0px;
+    width: auto;
+  }
+}
+.menu-item img {
+  border-radius: 50%;
+  border: 10px solid #cbc6b9;
+  position: absolute;
+  right: 0;
+  margin-top: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .menu-item img {
+    right: 120px;
+  }
+}
+@media screen and (max-width: 759px) {
+  .menu-item img {
+    width: 120px;
+    margin-top: 0;
   }
 }
 
